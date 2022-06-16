@@ -3,14 +3,16 @@ pipeline{
     stages {
 
     stage('build'){
-    steps{
+    Steps{
     sh 'ant -f build.xml -v'
     }
     }
-    stage ('test') {
-    steps{
-    sh 'echo "This is blueocean"'
+ stage(‘test’){
+    Steps{
+    sh 'echo “This is blue”'
     }
+    }
+
     }
     post {
    	 always{
@@ -18,4 +20,4 @@ pipeline{
    	 }
     }
 }
-}
+

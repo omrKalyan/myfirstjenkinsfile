@@ -9,7 +9,7 @@ pipeline{
     }
     stage ('test') {
     steps{
-    echo "This is blueocean"
+    sh 'echo "This is blueocean"'
     }
     }
     post {

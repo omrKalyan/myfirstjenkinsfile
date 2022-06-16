@@ -8,8 +8,8 @@ pipeline{
     }
     }
  stage(‘test’){
-    steps{
-    sh 'echo “This is blue”'
+   steps{
+    sh 'echo “This is blue change”'
     }
     }
 

@@ -3,12 +3,12 @@ pipeline{
     stages {
 
     stage('build'){
-    Steps{
+    steps{
     sh 'ant -f build.xml -v'
     }
     }
  stage(‘test’){
-    Steps{
+    steps{
     sh 'echo “This is blue”'
     }
     }
